@@ -1,3 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "init.css";
+@import "shiki.css";
+@import "components/loader.component.css";
+@import "header.css";
+
+@layer components {
+  .text-shadow-dark {
+    text-shadow: 0 0 3px #b0bac6;
+  }
+  .text-shadow-light {
+    text-shadow: 0 0 1.5px #161c24;
+  }
+  .b-t {
+    @apply border-2 border-black;
+  }
+}
+
+.hero {
+  @apply container flex items-center mt-8 max-md:flex-col;
+}
+
+.learning-paths {
+  @apply container py-20 xl:px-12;
+}
+
+.learning-paths-card {
+  @apply flex items-center p-3 duration-300 border shadow-sm cursor-pointer md:p-5 hover:-translate-y-6 hover:scale-105 border-violet-500 bg-gray-50 dark:bg-gray-800 shadow-gray-500 rounded-xl;
+}
+
+.study-plans {
+  @apply py-20;
+}
+
+.features {
+  @apply container py-16;
+}
+
+
+
+.study-plans .card-lang {
+  @apply p-3 duration-300 rounded-lg shadow-lg hover:scale-110 hover:neon-purple dark:hover:neon-sky;
+}
+
+.test-color {
+  color: rgba(212, 195, 38, 0.25);
+}
+
+.shadow-tag {
+
+  box-shadow: 0 0 12px 1.5px var(--color);
+}
+
+.share-links {
+  gap: 16px;
+}
+
+
+.social-icon {
+  display: inline-flex;
+  text-align: center;
+  color: var(--text-color-main);
+  padding: 8px;
+  border-radius: 50%;
+  transition: all .25s;
+  position: relative;
+  background-color: var(--tag-background-color);
+}
+
+
+.social-icon svg {
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+}

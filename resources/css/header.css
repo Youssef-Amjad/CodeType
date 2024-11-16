@@ -1,0 +1,31 @@
+.navigation {
+  @apply flex justify-between items-center px-[3%] py-10 max-h-[8vh] max-md:relative;
+  box-shadow: 0 0 0.3rem #7c6fee9f;
+}
+
+.nav-links {
+  @apply z-50 flex items-center justify-center space-x-3 transition rounded-xl max-md:py-5 max-md:hidden max-md:bg-body-light max-md:dark:bg-body-dark whitespace-nowrap;
+  @apply max-lg:space-x-0 max-md:space-y-5 max-md:items-stretch max-md:absolute max-md:top-[85%] max-md:right-5  max-md:flex-col;
+  @apply max-md:border-x-white max-md:border-y-blue-700 max-md:border-4;
+}
+
+.sub-nav-links {
+  @apply group-hover:block z-50 absolute hidden space-y-5 top-12 left-[50%] max-md:left-[-40%] border-4 border-x-white border-y-primary rounded-xl py-3 px-1 bg-body-light dark:bg-body-dark;
+}
+
+.nav-link {
+  @apply block p-3 text-lg text-black transition ease-in-out hover:bg-gray-900 hover:text-white hover:dark:bg-slate-800 rounded-xl dark:text-white;
+  @apply max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-800 max-md:inline-block max-md:!w-full max-md:px-8 max-md:py-3 max-lg:text-sm max-md:text-base;
+}
+
+.nav-link.active {
+  @apply font-bold text-sky-600 border-primary lg:border-b;
+}
+
+.btn-search {
+  @apply flex justify-center p-3 transition-all ease-in-out hover:bg-gray-900 hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900;
+}
+
+.btn-theme {
+  @apply flex justify-center p-3 transition-all ease-in-out hover:bg-gray-900 hover:text-white hover:dark:bg-slate-800 rounded-xl max-md:dark:border-x-white max-md:shadow max-md:rounded max-md:border-x-4 max-md:border-x-gray-900;
+}
