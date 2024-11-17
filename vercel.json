@@ -9,6 +9,7 @@
         { "src": "/build/(.*)", "dest": "/public/build/$1" },
         { "src": "/images/(.*)", "dest": "/public/images/$1" },
         { "src": "/manifest.json", "dest": "/public/manifest.json" },
+        { "src": "/googleb1f556e61fb22fb4.html", "dest": "/public/googleb1f556e61fb22fb4.html" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
     "outputDirectory": "public",

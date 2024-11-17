@@ -10,4 +10,3 @@ function DarkMode() {
     document.documentElement.setAttribute("data-theme", "dark");
 }
 
-

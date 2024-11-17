@@ -2,7 +2,7 @@
     @include('web.partials.header')
 
     <div class="container max-w-screen-md">
-        <div class="px-4 sm:px-8 py-20 text-center">
+        <div class="px-4 py-20 text-center sm:px-8">
             <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">Privacy policy</h1>
             <p class="mt-4 text-base leading-7 text-slate-600 dark:text-slate-300">Last updated on November 2, 2021</p>
         </div>

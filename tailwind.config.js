@@ -9,9 +9,7 @@ export default {
     content: [
         "./resources/views/*.blade.php",
         "./resources/views/**/*.blade.php",
-        "./storage/framework/views/*.php",
     ],
-
     future: {
         hoverOnlyWhenSupported: true,
     },
@@ -34,72 +32,72 @@ export default {
                 primary: "#1E83E7",
                 secondary: "#7c6fee9f",
             },
-            // typography(theme) {
-            //   return {
-            //     dark: {
-            //       css: {
-            //         color: theme("colors.gray.300"),
-            //         '[class~="lead"]': { color: theme("colors.gray.400") },
-            //         a: { color: theme("colors.gray.100") },
-            //         strong: { color: theme("colors.gray.100") },
-            //         "ul > li::before": { backgroundColor: theme("colors.gray.700") },
-            //         hr: { borderColor: theme("colors.gray.800") },
-            //         blockquote: {
-            //           color: theme("colors.gray.100"),
-            //           borderLeftColor: theme("colors.gray.800"),
-            //         },
-            //         h1: { color: theme("colors.gray.100") },
-            //         h2: { color: theme("colors.gray.100") },
-            //         h3: { color: theme("colors.gray.100") },
-            //         h4: { color: theme("colors.gray.100") },
-            //         code: { color: theme("colors.gray.100") },
-            //         "a code": { color: theme("colors.gray.100") },
-            //         pre: {
-            //           color: theme("colors.gray.200"),
-            //           backgroundColor: theme("colors.gray.800"),
-            //         },
-            //         thead: {
-            //           color: theme("colors.gray.100"),
-            //           borderBottomColor: theme("colors.gray.700"),
-            //         },
-            //         "tbody tr": { borderBottomColor: theme("colors.gray.800") },
-            //       },
-            //     },
-            //   };
-            // },
-            typography: {
-                DEFAULT: {
-                    css: {
-                        "h1, h2, h3, h4, h5, h6": {
-                            "a:not([href^=http])": {
-                                color: colors.inherit,
-                                "font-weight": defaultTheme.fontWeight.bold,
-                                "text-decoration": "none",
-                                "&::before": {
-                                    content: '"# "',
-                                    "font-weight":
-                                        defaultTheme.fontWeight.normal,
-                                    opacity: defaultTheme.opacity[50],
-                                },
-                            },
-                        },
-                        a: {
-                            "font-weight": "inherit",
-                            color: colors.indigo[600],
-                        },
-                        'iframe[src^="https://www.youtube.com"]': {
-                            width: "100% !important",
-                            height: "auto !important",
-                            "aspect-ratio": defaultTheme.aspectRatio.video,
-                            "border-radius": defaultTheme.borderRadius.md,
-                            "box-shadow": defaultTheme.boxShadow.lg,
-                        },
-                        pre: {
-                            padding: "1rem",
-                        },
+            typography(theme) {
+              return {
+                dark: {
+                  css: {
+                    color: theme("colors.gray.300"),
+                    '[class~="lead"]': { color: theme("colors.gray.400") },
+                    a: { color: theme("colors.gray.100") },
+                    strong: { color: theme("colors.gray.100") },
+                    "ul > li::before": { backgroundColor: theme("colors.gray.700") },
+                    hr: { borderColor: theme("colors.gray.800") },
+                    blockquote: {
+                      color: theme("colors.gray.100"),
+                      borderLeftColor: theme("colors.gray.800"),
                     },
+                    h1: { color: theme("colors.gray.100") },
+                    h2: { color: theme("colors.gray.100") },
+                    h3: { color: theme("colors.gray.100") },
+                    h4: { color: theme("colors.gray.100") },
+                    code: { color: theme("colors.gray.100") },
+                    "a code": { color: theme("colors.gray.100") },
+                    pre: {
+                      color: theme("colors.gray.200"),
+                      backgroundColor: theme("colors.gray.800"),
+                    },
+                    thead: {
+                      color: theme("colors.gray.100"),
+                      borderBottomColor: theme("colors.gray.700"),
+                    },
+                    "tbody tr": { borderBottomColor: theme("colors.gray.800") },
+                  },
                 },
+              };
             },
+            // typography: {
+            //     DEFAULT: {
+            //         css: {
+            //             "h1, h2, h3, h4, h5, h6": {
+            //                 "a:not([href^=http])": {
+            //                     color: colors.inherit,
+            //                     "font-weight": defaultTheme.fontWeight.bold,
+            //                     "text-decoration": "none",
+            //                     "&::before": {
+            //                         content: '"# "',
+            //                         "font-weight":
+            //                             defaultTheme.fontWeight.normal,
+            //                         opacity: defaultTheme.opacity[50],
+            //                     },
+            //                 },
+            //             },
+            //             a: {
+            //                 "font-weight": "inherit",
+            //                 color: colors.indigo[600],
+            //             },
+            //             'iframe[src^="https://www.youtube.com"]': {
+            //                 width: "100% !important",
+            //                 height: "auto !important",
+            //                 "aspect-ratio": defaultTheme.aspectRatio.video,
+            //                 "border-radius": defaultTheme.borderRadius.md,
+            //                 "box-shadow": defaultTheme.boxShadow.lg,
+            //             },
+            //             pre: {
+            //                 padding: "1rem",
+            //             },
+            //         },
+            //     },
+            // },
         },
     },
     variants: {

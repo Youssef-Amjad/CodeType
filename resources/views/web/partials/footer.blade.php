@@ -97,6 +97,17 @@
             </div>
             <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
                 <div class="w-full mb-10">
+                    <h1 class="mb-8 text-xl font-semibold">About</h1>
+                    <ul class="max-md:ml-3">
+                        <li><a href="{{ route('about') }}" class="inline-block mb-2 font-medium hover:text-primary">About</a></li>
+                        <li><a href="{{ route('contact') }}" class="inline-block mb-2 font-medium hover:text-primary">Contact</a></li>
+                        <li><a href="{{ route('faqs') }}" class="inline-block mb-2 font-medium hover:text-primary">Faqs</a></li>
+                        <li><a href="{{ route('privacy') }}" class="inline-block mb-2 font-medium hover:text-primary">privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                <div class="w-full mb-10">
                     <h1 class="mb-8 text-xl font-semibold">Resources</h1>
                     <ul class="max-md:ml-3">
                         <li><a href="#" class="inline-block mb-2 hover:text-primary">Development</a></li>
@@ -109,34 +120,26 @@
             <div class="w-full px-4 mb-10 sm:w-1/2 lg:w-3/12">
                 <h1 class="text-lg font-semibold mb-9">Follow Us On</h1>
                 <div class="flex items-center mb-6">
-                    <a href="/" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                        <span class="sr-only">f</span>
-                        <svg height="24" viewBox="0 0 8 16" class="fill-current">
-                            <path d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
-                        </svg>
+                    <a href="https://www.facebook.com/ZY1YOGi" title="Facebook" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex size-10 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                        <span class="sr-only">Facebook</span>
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
                     </a>
-                    <a href="/" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                        <span class="sr-only">f</span>
-                        <svg height="24" viewBox="0 0 16 12" class="fill-current">
-                            <path d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
-                        </svg>
+                    <a href="https://x.com/ZYYOGi" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex size-10 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                        <span class="sr-only">X(Twitter)</span>
+                        <i class="fa-solid fa-x fa-2xl"></i>
                     </a>
-                    <a href="/" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                        <span class="sr-only">f</span>
-                        <svg height="24" viewBox="0 0 16 12" class="fill-current">
-                            <path d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
-                        </svg>
+                    <a href="https://www.youtube.com/@Youssef-Amjad" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex size-12 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                        <span class="sr-only">YouTube</span>
+                        <i class="fa-brands fa-youtube fa-2xl"></i>
                     </a>
-                    <a href="/" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
-                        <span class="sr-only">f</span>
-                        <svg height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="fill-current">
-                            <path d="M412.19,118.66a109.27,109.27,0,0,1-9.45-5.5,132.87,132.87,0,0,1-24.27-20.62c-18.1-20.71-24.86-41.72-27.35-56.43h.1C349.14,23.9,350,16,350.13,16H267.69V334.78c0,4.28,0,8.51-.18,12.69,0,.52-.05,1-.08,1.56,0,.23,0,.47-.05.71,0,.06,0,.12,0,.18a70,70,0,0,1-35.22,55.56,68.8,68.8,0,0,1-34.11,9c-38.41,0-69.54-31.32-69.54-70s31.13-70,69.54-70a68.9,68.9,0,0,1,21.41,3.39l.1-83.94a153.14,153.14,0,0,0-118,34.52,161.79,161.79,0,0,0-35.3,43.53c-3.48,6-16.61,30.11-18.2,69.24-1,22.21,5.67,45.22,8.85,54.73v.2c2,5.6,9.75,24.71,22.38,40.82A167.53,167.53,0,0,0,115,470.66v-.2l.2.2C155.11,497.78,199.36,496,199.36,496c7.66-.31,33.32,0,62.46-13.81,32.32-15.31,50.72-38.12,50.72-38.12a158.46,158.46,0,0,0,27.64-45.93c7.46-19.61,9.95-43.13,9.95-52.53V176.49c1,.6,14.32,9.41,14.32,9.41s19.19,12.3,49.13,20.31c21.48,5.7,50.42,6.9,50.42,6.9V131.27C453.86,132.37,433.27,129.17,412.19,118.66Z" />
-                        </svg>
+                    <a href="https://www.tiktok.com/@codexline" target="_blank" class="hover:bg-primary hover:border-primary mr-3 flex size-12 items-center justify-center rounded-full border border-[#E5E5E5] hover:text-white sm:mr-4 lg:mr-3 xl:mr-4">
+                        <span class="sr-only">Tiktok</span>
+                        <i class="fa-brands fa-tiktok fa-2xl"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <h1 class="text-lg text-center">&copy; 2024 All rights reserved for <a href="https://Code Type.com" class="font-bold text-indigo-600" title="Code Type">Code Type</a></h1>
+        <h1 class="text-lg text-center">&copy; 2024 All rights reserved for <a href="https://codetype-platform.vercel.app" class="font-bold text-indigo-600" title="Code Type">Code Type</a></h1>
     </div>
     <div>
         <span class="absolute left-0 bottom-0 z-[-1]">

@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     {{-- CSRF Token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    {{-- Google Verification --}}
+    <meta name="google-site-verification" content="wZO1kaaUlZm8cLkM3C_dSzZu_XEW4XNbS7D_Xmjwpw4" />
+    {{-- Title --}}
+    <title>{{ $title }}</title>
     {{-- Author --}}
-    <meta name="author" content="Youssef Amjad (ZY1YOGi)" />
+    <meta name="author" content="Youssef Amjad (YOGi)" />
     {{-- Description --}}
     <meta name="description" content="{{ $description }}" />
     {{-- Keywords --}}
@@ -27,8 +31,6 @@
     <meta name="twitter:title" content="{{ $title }}" />
     {{-- Robots --}}
     <meta name="robots" content="index, follow" />
-    {{-- Title --}}
-    <title>{{ $title }}</title>
     {{-- Favicon Icon --}}
     <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}" type="image/x-icon" />
     {{-- Fonts Google --}}
@@ -49,6 +51,8 @@
     {{-- Canonical --}}
     <link rel="canonical" href="{{ url()->current() }}" />
 
+    {{-- FontAwesome --}}
+    @vite('resources/css/FontAwesome/FontAwesome.min.css')
     {{-- Styls --}}
     @vite('resources/css/app.css')
 
