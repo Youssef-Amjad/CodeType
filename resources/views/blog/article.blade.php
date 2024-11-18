@@ -60,7 +60,7 @@
                 <section class="relative py-16 border-t border-gray-200 dark:border-gray-200/5">
                     <h2 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Get all of our updates directly to your&nbsp;inbox.<br>Sign up for our newsletter.</h2>
                     <div class="max-w-md mt-5">
-                        <form action="https://app.convertkit.com/forms/3181881/subscriptions" method="post" class="flex flex-wrap">
+                        <form action="" method="post" class="flex flex-wrap">
                             <div class="px-2 grow-[9999] basis-64 mt-3">
                                 <div class="relative group">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="absolute inset-y-0 w-6 h-full text-gray-400 pointer-events-none left-3 group-focus-within:text-sky-500 dark:group-focus-within:text-gray-400">
