@@ -61,6 +61,7 @@
     {{-- Theme --}}
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0E1422" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E4E9F7" />
+    {{-- Google Tag Manager --}}
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -76,6 +77,17 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5J2RVBDW');
+    </script>
+    {{-- Google Analytics --}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPX1JVPGC3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-DPX1JVPGC3');
     </script>
 </head>
 

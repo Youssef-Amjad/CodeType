@@ -84,4 +84,4 @@ This is disallowed HTML:
 
 ## Show Image
 
-![youssef](http://localhost/placeholder.png "youssef Amjad")
+![placeholder](/images/placeholder.png "placeholder")

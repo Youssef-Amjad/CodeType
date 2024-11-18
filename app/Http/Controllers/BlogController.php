@@ -2,23 +2,40 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Article;
 use Illuminate\View\View;
 
 class BlogController extends Controller
 {
     public function index(): View
     {
-        $posts = Post::with('categories')->paginate(5);
+        // $posts = Article::with('categories')->paginate(5);
+
+        $posts = [];
 
         return view('blog.index', compact('posts'));
     }
 
     public function post(string $slug): View
     {
-        $post = Post::where('slug', '=', $slug)->with(['categories', 'user'])->firstOrFail();
-        $post['tags'] = collect(['php', 'laravel', 'web', 'js', 'backend', 'Tips', 'Treks']);
+        // $post = Article::where('slug', '=', $slug)->with(['categories', 'user'])->firstOrFail();
+        // $post['tags'] = collect(['php', 'laravel', 'web', 'js', 'backend', 'Tips', 'Treks']);
         // dd($post);
+
+        $post = collect([
+            'slug' => 'meet-studio-our-new-agency-template',
+            'description' => 'meet-studio-our-new-agency-template',
+            'categories' => [
+
+            ],
+            'tags' => collect(['php', 'laravel', 'web', 'js', 'backend', 'Tips', 'Treks']),
+            'user' => [
+                'name' => 'John Doe',
+                'email' => 'john@example.com',
+                'avatar' => 'https://example.com/johndoe.jpg',
+            ]
+        ]);
+
         return view('blog.post', compact('post'));
     }
 }

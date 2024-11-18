@@ -1,4 +1,4 @@
-<x-layouts.master :title="$post->slug" :description="$post->description" keywords="python,javascript,js,git,github,website,web,development,course,courses,html,css,react,redux,api,front,back,end,learn,tutorial,programming">
+<x-layouts.master :title="$post->get('slug')" :description="$post->get('description')" keywords="python,javascript,js,git,github,website,web,development,course,courses,html,css,react,redux,api,front,back,end,learn,tutorial,programming">
     @include('web.partials.header')
 
     <main class="container max-w-screen-lg mt-8">
@@ -6,7 +6,7 @@
             <x-slot:middle :href="route('blog.index')">
                 Blog
             </x-slot:middle>
-            <a href="{{ $post->slug }}" class="font-medium underline">{{ $post->slug }}</a>
+            <a href="{{ $post->get('slug') }}" class="font-medium underline">{{ $post->get('slug') }}</a>
         </x-breadcrumb>
 
         <div class="flex px-4 pt-8 pb-10 lg:px-8">
@@ -22,7 +22,7 @@
                 <dl>
                     <dt class="sr-only">Date</dt>
                     <dd>
-                        <time datetime="{{ $post->presenter()->lastUpdated() }}">{{ $post->presenter()->lastUpdated() }}</time>
+                        {{-- <time datetime="{{ $post->presenter()->lastUpdated() }}">{{ $post->presenter()->lastUpdated() }}</time> --}}
                     </dd>
                 </dl>
                 <span class="mx-1 font-bold">•</span>
@@ -36,20 +36,20 @@
             <x-section class="flex items-center px-5 my-6 space-x-1.5 font-medium whitespace-nowrap">
                 <x-image :src="asset('images/avatars/youssef.jpg')" alt="" class="w-12 h-12 rounded-full" />
                 <div class="text-sm leading-6">
-                    <h1 class="text-gray-900 dark:text-gray-200">{{ $post->user->name }}</h1>
-                    <a href="https://twitter.com/ZYYOGi" class="text-sky-500 hover:text-sky-600 dark:text-sky-400">{{ $post->user->email }}</a>
+                    <h1 class="text-gray-900 dark:text-gray-200">{{ $post->get('user')['name'] }}</h1>
+                    <a href="https://twitter.com/ZYYOGi" class="text-sky-500 hover:text-sky-600 dark:text-sky-400">{{ $post->get('user')['email'] }}</a>
                 </div>
             </x-section>
-            <x-post.categories :categories="$post->categories" />
+            {{-- <x-post.categories :categories="$post->get('categories')" /> --}}
             <br>
-            <x-post.tags :tags="$post->tags" />
+            <x-post.tags :tags="$post->get('tags')" />
             <x-prose>
                 <h1 class="text-2xl font-extrabold text-gray-900 dark:text-gray-200 md:text-3xl">
-                    {{ $post->title }}
+                    {{ $post->get('title') }}
                 </h1>
-                <x-post.tree.trunk :tree="$post->presenter()->tree()" />
+                {{-- <x-post.tree.trunk :tree="$post->presenter()->tree()" /> --}}
 
-                {!! $post->presenter()->content() !!}
+                {!! Str::markdown(File::get(resource_path('markdown/benchmark.md'))) !!}
             </x-prose>
         </article>
 

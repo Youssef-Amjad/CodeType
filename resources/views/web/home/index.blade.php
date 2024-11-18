@@ -1,4 +1,4 @@
-<x-layout-web title="Code Type | Home" description="Home" keywords="python,javascript,js,git,github,website,web,development,course,courses,html,css,react,redux,api,front,back,end,learn,tutorial,programming">
+<x-layout-web title="Code Type | Home" description="CodeType is an innovative educational platform for learning programming and enhancing technical skills. Explore comprehensive courses, personalized learning paths, and study plans tailored to help you excel in modern programming fields." keywords="python,javascript,js,git,github,website,web,development,course,courses,html,css,react,redux,api,front,back,end,learn,tutorial,programming">
     @include('web.partials.header')
 
     <main>
