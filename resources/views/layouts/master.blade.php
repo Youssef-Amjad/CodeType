@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="{{ $getTheme() }}" data-theme="{{ $getTheme() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="ltr" class="{{ $getTheme() }}" data-theme="{{ $getTheme() }}">
 
 <head>
     {{-- Charset --}}
@@ -83,6 +83,7 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J2RVBDW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     {{ $slot }}
 
     @include('layouts.loader')

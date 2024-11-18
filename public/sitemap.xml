@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://codetype-platform.vercel.app/</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/faqs</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/login</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/about</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/contact</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/privacy</loc>
+	<lastmod>2024-11-17T22:37:46+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/forgot-password</loc>
+	<lastmod>2024-11-17T22:37:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://codetype-platform.vercel.app/register</loc>
+	<lastmod>2024-11-17T22:37:49+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
