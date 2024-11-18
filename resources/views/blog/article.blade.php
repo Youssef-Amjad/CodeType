@@ -29,7 +29,7 @@
                 <dl>
                     <dt class="sr-only">min Read</dt>
                     <dd>
-                        <span>{{ fake()->numberBetween(4, 16) }} min Read</span>
+                        <span>9 min Read</span>
                     </dd>
                 </dl>
             </header>
