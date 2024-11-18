@@ -19,12 +19,12 @@
                                         <h3 role="tag" class="transition-colors hover:text-white duration-300 px-2.5 py-1 rounded-full font-medium text-xs relative text-blue-800 bg-blue-100 hover:bg-blue-800">{{ $keyword }}</h3>
                                     @endforeach
                                 </div>
-                                <a class="block font-serif font-bold text-gray-800 underline underline-offset-4" title="category" href="">{{ fake()->name() }}</a>
+                                <a class="block font-serif font-bold text-gray-800 underline underline-offset-4" title="category" href="">Youssef Amjad</a>
                                 <h2 class="text-2xl font-semibold md:text-3xl line-clamp-1">
-                                    {{ fake()->name() }}
+                                    Youssef Amjad
                                 </h2>
                                 <p class="mt-2 text-sm font-normal md:mt-3 sm:text-base text-neutral-500 dark:text-neutral-400 line-clamp-4">
-                                    {{ fake()->text(300) }}
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis aspernatur fuga quibusdam, in nemo esse molestias cumque dolores aliquid temporibus magnam voluptates quae, rerum consequatur at ullam dolore exercitationem!
                                 </p>
                                 <div class="flex justify-between pt-5">
                                     <dl class="flex items-center mt-1 text-xs text-neutral-500 dark:text-neutral-400">
@@ -50,14 +50,14 @@
                             <div class="relative z-0 block w-full overflow-hidden group aspect-w-16 aspect-h-16 sm:aspect-h-9">
                                 <div class="w-full h-full grid grid-cols-3 gap-0.5">
                                     <div class="grid">
-                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded-2xl" :alt="fake()->name()" />
+                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded-2xl" alt="Youssef Amjad" />
                                     </div>
                                     <div class="grid grid-rows-2 gap-0.5">
-                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded" :alt="fake()->name()" />
-                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded" :alt="fake()->name()" />
+                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded" alt="Youssef Amjad" />
+                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded" alt="Youssef Amjad" />
                                     </div>
                                     <div class="grid">
-                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded-2xl" :alt="fake()->name()" />
+                                        <x-image :src="'default-placeholder.png'" class="object-cover object-center w-full h-full rounded-2xl" alt="Youssef Amjad" />
                                     </div>
                                 </div>
                                 <a class="absolute inset-0 block transition-opacity opacity-0 bg-white/20 group-hover:opacity-100" href=""></a>
