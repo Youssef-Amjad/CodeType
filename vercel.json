@@ -14,10 +14,9 @@
         { "src": "/googleb1f556e61fb22fb4.html", "dest": "/public/googleb1f556e61fb22fb4.html" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "true",
+        "APP_DEBUG": "false",
         "APP_URL": "https://codetype-platform.vercel.app",
         "ASSET_URL": "https://codetype-platform.vercel.app",
         "APP_KEY": "base64:WJct6g7/cM70lHgf6d1gdsvKvUlJmZ2eNwc366e5wuk=",
