@@ -12,6 +12,10 @@
     <meta name="google-site-verification" content="wZO1kaaUlZm8cLkM3C_dSzZu_XEW4XNbS7D_Xmjwpw4" />
     {{-- Title --}}
     <title>{{ $title }}</title>
+    {{-- Publisher --}}
+    <meta name="publisher" content="CodeType" />
+    {{-- Creator --}}
+    <meta name="creator" content="Youssef Amjad (YOGi)" />
     {{-- Author --}}
     <meta name="author" content="Youssef Amjad (YOGi)" />
     {{-- Description --}}
@@ -19,10 +23,12 @@
     {{-- Keywords --}}
     <meta name="keywords" content="{{ $keywords }}" />
     {{-- Meta OG --}}
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ $description }}" />
     <meta property="og:title" content="{{ $title }}" />
     <meta property="og:image" content="{{ $image }}" />
-    <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:site_name" content="CodeType" />
     {{-- Meta Twitter --}}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:creator" content="@ZYYOGi" />
