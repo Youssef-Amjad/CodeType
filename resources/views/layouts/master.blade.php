@@ -4,6 +4,8 @@
 <head>
     {{-- Charset --}}
     <meta charset="UTF-8" />
+    {{-- Edge --}}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {{-- ViewPort --}}
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     {{-- CSRF Token --}}
@@ -38,7 +40,7 @@
     {{-- Robots --}}
     <meta name="robots" content="index, follow" />
     {{-- Favicon Icon --}}
-    <link rel="shortcut icon" href="{{ asset('images/favicon/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     {{-- Fonts Google --}}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
