@@ -47,7 +47,7 @@
                                 </dl>
                             </dl>
                         </div>
-                        <a class="flex items-center text-sm font-medium text-sky-500" href="{{ route('blog.post', $post->slug) }}">
+                        <a class="flex items-center text-sm font-medium text-sky-500" href="{{ route('blog.article', $post->slug) }}">
                             <span class="absolute -inset-y-2.5 -inset-x-4 md:-inset-y-4 md:-inset-x-6 sm:rounded-2xl"></span>
                             <span class="relative">Read more
                                 <span class="sr-only">, How to start programming</span>

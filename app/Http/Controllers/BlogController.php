@@ -16,7 +16,7 @@ class BlogController extends Controller
         return view('blog.index', compact('posts'));
     }
 
-    public function post(string $slug): View
+    public function article(string $slug): View
     {
         // $post = Article::where('slug', '=', $slug)->with(['categories', 'user'])->firstOrFail();
         // $post['tags'] = collect(['php', 'laravel', 'web', 'js', 'backend', 'Tips', 'Treks']);
@@ -36,6 +36,6 @@ class BlogController extends Controller
             ]
         ]);
 
-        return view('blog.post', compact('post'));
+        return view('blog.article', compact('post'));
     }
 }
