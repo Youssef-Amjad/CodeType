@@ -3,7 +3,7 @@
     <main class="max-lg:py-32">
         <div class="flex flex-col items-center justify-center px-3 py-8 mx-auto md:h-screen lg:py-0">
             <a class="relative mb-6" title="CodeType" href="{{ route('home') }}">
-                <h1 class="ml-2 text-lg font-bold md:text-3xl dark:text-white" title="{{ config('app.name') }}">{{ config('app.name') }}</h1>
+                <h1 class="ml-2 text-lg font-bold md:text-3xl dark:text-white" title="CodeType">CodeType</h1>
             </a>
             <div class="w-full rounded-lg shadow bg-white/50 dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 backdrop-blur-3xl">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
