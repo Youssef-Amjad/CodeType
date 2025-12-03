@@ -25,23 +25,6 @@
                 </ul>
             </li>
 
-
-            <li class="relative nav-link group">
-                <button class="flex items-center"><h2>Learning paths</h2>
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="ml-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"></path>
-                    </svg>
-                </button>
-                <ul role="menu" class="sub-nav-links">
-                    <li><a class='nav-link' href="#">Fundamentals Course</a></li>
-                    <li><a class='nav-link' href="#">Front-End Developer track</a></li>
-                    <li><a class='nav-link' href="#">Back-End Developer track</a></li>
-                    <li><a class='nav-link' href="#">Cyber Security track</a></li>
-                    <li><a class='nav-link' href="#">DevOps Developer track</a></li>
-                </ul>
-            </li>
-
-
             <li class="relative nav-link group">
                 <button class="flex items-center"><h2>Study plans</h2>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="ml-1.5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +40,8 @@
                     <li><a class="nav-link" href="#">PHP study plan</a></li>
                 </ul>
             </li>
+
+            <li><a class="nav-link" href="{{ route('about') }}">About</a></li>
 
             <li><a class="nav-link" href="{{ route('blog.index') }}">Blog</a></li>
 
