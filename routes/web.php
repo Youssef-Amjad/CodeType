@@ -22,13 +22,10 @@ Route::get('/test', function () {
 });
 
 
-
 Route::view('/about', 'web.about.index')->name('about');
 Route::view('/contact', 'web.contact.index')->name('contact');
 Route::view('/faqs', 'web.faqs.index')->name('faqs');
 Route::view('/privacy', 'web.privacy.index')->name('privacy');
-
-
 
 include __DIR__ . '/auth.php';
 include __DIR__ . '/blog.php';

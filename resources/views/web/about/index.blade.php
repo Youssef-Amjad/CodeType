@@ -12,12 +12,12 @@
                 {{--  Team Card --}}
                 <div class="flex p-4 rounded-lg shadow-lg dark:shadow-gray-900">
                     <div class="mr-6">
-                        <i class="fa fa-users fa-xl"></i>
+                        <i class="fa fa-user fa-xl"></i>
                     </div>
                     <div class="">
                         <p class="text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6 dark:text-white">Team</p>
                         <p class="mt-2 text-base font-normal leading-6 text-gray-600 dark:text-gray-300">
-                            At CodeType, we’re more than just a platform — we’re a passionate team of developers, educators, and innovators dedicated to shaping the future of programming education.
+                            At CodeType, it's just me — Youssef Amjad. I'm a passionate developer and educator dedicated to shaping the future of programming education.
                         </p>
                     </div>
                 </div>
